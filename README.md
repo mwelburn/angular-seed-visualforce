@@ -12,17 +12,18 @@ The current implementation shows two separate ways for routes to be defined: HTM
 * HTML Partials require that the relative path of the static resource is captured in a Visualforce Page/Component, and then that value (stored in a variable) gets referenced when determining the routing 
 * APEX Page partials simply require /apex/PageName
 
-Examples:
-```
-  AngularJS.component
+In order for HTML Partials to be leveraged, the following must be implemented. The javascript in AngularJS.component should occur prior to the include for app.js.
 
+* AngularJS.component
+```
+  // AngularImpl refers to the name of the Static Resource
   var angularImplPath = '{!$Resource.AngularImpl}';
 ```
+* /app/js/app.js
 ```
-  /app/js/app.js
-
   //APEX
   $routeProvider.when('/view2', {templateUrl: '/apex/partial2', controller: 'MyCtrl2'});
+  
   //HTML Partial
   $routeProvider.when('/view2', {templateUrl: angularImplPath + '/app/partials/partial2.html', controller: 'MyCtrl2'});
 ```

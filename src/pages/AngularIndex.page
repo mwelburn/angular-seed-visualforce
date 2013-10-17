@@ -1,0 +1,24 @@
+<apex:page showHeader="false" sidebar="false" docType="html-5.0" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false">
+  <html lang="en" ng-app="angularDemo">
+    <head>
+      <title>Angular Demo</title>
+      <meta name="description" content="Angular VF Demo"/>
+      <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+
+      <c:AngularCSS />
+    </head>
+    <body>
+      <ul class="menu">
+        <li><a href="#/view1">view1</a></li>
+        <li><a href="#/view2">view2</a></li>
+      </ul>
+
+      <!-- VF does not allow compilation of the ng attributes without a value assigned -->
+      <div class="ng-view"></div>
+
+      <div>Angular seed app: v<span class="app-version"></span></div>
+
+      <c:AngularJS />
+    </body>
+  </html>
+</apex:page>

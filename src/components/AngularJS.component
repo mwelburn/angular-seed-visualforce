@@ -1,0 +1,10 @@
+<apex:component layout="none">
+  <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/lib/angular/angular.min.js')}"/>
+  <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/lib/angular/angular-route.min.js')}"/>
+  <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/lib/ngForce/ngForce.js')}"/>
+  <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/js/app.js')}"/>
+  <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/js/services.js')}"/>
+  <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/js/controllers.js')}"/>
+  <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/js/filters.js')}"/>
+  <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/js/directives.js')}"/>
+</apex:component>

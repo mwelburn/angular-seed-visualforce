@@ -1,0 +1,7 @@
+<apex:page showHeader="false" sidebar="false" docType="html-5.0" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false">
+  <p>This is the partial for view 2.</p>
+  <p>
+    Showing of 'interpolate' filter:
+    {{ 'Current version is v%VERSION%.' | interpolate }}
+  </p>
+</apex:page>

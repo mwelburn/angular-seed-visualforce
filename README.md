@@ -5,6 +5,15 @@ This project is an attempt to recreate the skeleton of the [angular-seed](https:
 
 To take advantage of the resource-bundle folder, take a look at [MavensMate](https://github.com/joeferraro/MavensMate) which has automated Resource Bundle deployments.
 
+Usage
+----
+
+Included with the package is a Visualforce tab. You can either add the Angular Demo tab to your Application, or you can simply navigate to your explicit Salesforce URL and append /apex/AngularIndex
+
+```
+Example: https://na15.salesforce.com/apex/AngularIndex
+```
+
 Notes
 ----
 

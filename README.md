@@ -32,5 +32,5 @@ Open Items
 Installation Link
 ----
   
-* [https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti00000003uj7](https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti00000003uj7)
+* [https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti00000003ujC](https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti00000003ujC)
 * **Note**: not guaranteed to be current

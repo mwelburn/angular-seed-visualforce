@@ -8,7 +8,7 @@
 	<types>
 		<members>AngularIndex</members>
 		<members>partial1</members>
-		<members>partial2</members>
+        <members>partial2</members>
 		<name>ApexPage</name>
 	</types>
 	<types>

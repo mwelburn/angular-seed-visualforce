@@ -1,4 +1,10 @@
 <apex:component layout="none">
+  <script type="text/javascript">
+    // Need to acquire any information from Salesforce in a VF page/component
+    // and set to a variable for the JS included
+    var angularImplPath = '{!$Resource.AngularImpl}';
+  </script>
+
   <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/lib/angular/angular.min.js')}"/>
   <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/lib/angular/angular-route.min.js')}"/>
   <apex:includeScript value="{!URLFOR($Resource.AngularImpl, 'app/lib/ngForce/ngForce.js')}"/>

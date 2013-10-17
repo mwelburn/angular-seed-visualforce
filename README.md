@@ -16,15 +16,15 @@ In order for HTML Partials to be leveraged, the following must be implemented. T
 
 * AngularJS.component
 ```javascript
-    //AngularImpl refers to the name of the Static Resource
-    var angularImplPath = '{!$Resource.AngularImpl}';
+  // AngularImpl refers to the name of the Static Resource
+  var angularImplPath = '{!$Resource.AngularImpl}';
 ```
 * /app/js/app.js
 ```javascript
-  //APEX
+  // APEX
   $routeProvider.when('/view2', {templateUrl: '/apex/partial2', controller: 'MyCtrl2'});
   
-  //HTML Partial
+  // HTML Partial
   $routeProvider.when('/view2', {templateUrl: angularImplPath + '/app/partials/partial2.html', controller: 'MyCtrl2'});
 ```
 

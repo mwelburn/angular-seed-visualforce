@@ -16,7 +16,7 @@ In order for HTML Partials to be leveraged, the following must be implemented. T
 
 * AngularJS.component
 ```javascript
-    // AngularImpl refers to the name of the Static Resource
+    //AngularImpl refers to the name of the Static Resource
     var angularImplPath = '{!$Resource.AngularImpl}';
 ```
 * /app/js/app.js

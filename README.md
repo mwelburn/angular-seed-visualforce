@@ -16,17 +16,17 @@ In order for HTML Partials to be leveraged, the following must be implemented. T
 
 * AngularJS.component
 ```javascript
-// AngularImpl refers to the name of the Static Resource
-var angularImplPath = '{!$Resource.AngularImpl}';
+  // AngularImpl refers to the name of the Static Resource
+  var angularImplPath = '{!$Resource.AngularImpl}';
 ```
 
 * /app/js/app.js
 ```javascript
-// APEX
-$routeProvider.when('/view2', {templateUrl: '/apex/partial2', controller: 'MyCtrl2'});
+  // APEX
+  $routeProvider.when('/view2', {templateUrl: '/apex/partial2', controller: 'MyCtrl2'});
   
-// HTML Partial
-$routeProvider.when('/view2', {templateUrl: angularImplPath + '/app/partials/partial2.html', controller: 'MyCtrl2'});
+  // HTML Partial
+  $routeProvider.when('/view2', {templateUrl: angularImplPath + '/app/partials/partial2.html', controller: 'MyCtrl2'});
 ```
 
 As it currently stands, no POC'ing has been done to see the extent of Salesforce access an HTML partial would have leveraging ngForce. The assumption is none considering the lack of Visualforce access to session information, unless the required information is also captured in javascript variables and set in that way. As such, HTML partials are likely more ideal for static content.

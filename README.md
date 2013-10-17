@@ -15,14 +15,12 @@ The current implementation shows two separate ways for routes to be defined: HTM
 In order for HTML Partials to be leveraged, the following must be implemented. The javascript in AngularJS.component should occur prior to the include for app.js.
 
 * AngularJS.component
-```
-  <script type="text/javascript">
+```javascript
     // AngularImpl refers to the name of the Static Resource
     var angularImplPath = '{!$Resource.AngularImpl}';
-  </script>
 ```
 * /app/js/app.js
-```
+```javascript
   //APEX
   $routeProvider.when('/view2', {templateUrl: '/apex/partial2', controller: 'MyCtrl2'});
   

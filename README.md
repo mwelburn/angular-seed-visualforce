@@ -11,7 +11,8 @@ Notes
 The current implementation shows two separate ways for routes to be defined: HTML Partials and APEX Pages
 * HTML Partials require that the relative path of the static resource is captured in a Visualforce Page/Component, and then that value (stored in a variable) gets referenced when determining the routing (see /app/js/app.js for example)
 * APEX Page partials simply require /apex/PageName
-As it currently stands, no POC'ing has been done to see the extent of Salesforce access an HTML partial would have leveraging ngForce. The assumption is none considering the lack of Visualforce access to session information, unless the required information is also captured in javascript variables and set in that way. As such, HTML partials are likely more ideal for static content.
+
+As it currently stands, no POC'ing has been done to see the extent of Salesforce access an HTML partial would have leveraging ngForce. The assumption is none, considering the lack of Visualforce access to session information, unless the required information is also captured in javascript variables and set in that way. As such, HTML partials are likely more ideal for static content.
 
 Usage
 ----
